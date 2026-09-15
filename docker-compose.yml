@@ -1,0 +1,14 @@
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: shinno
+      POSTGRES_PASSWORD: QPqGiZh3AtFKVn2
+      POSTGRES_DB: cb_base
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/vat/lib/postgresql/data
+
+volumes:
+  pgdata:
